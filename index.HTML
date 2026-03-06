@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Последний из Пяти • Legacy of Mankind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body { height:100%; background:#0a0615; color:#d9c9a8; font-family:'VT323',monospace; font-size:22px; line-height:1.5; overflow-x:hidden; }
+    .pixel-font { font-family:'Press Start 2P',cursive; }
+    header { min-height:100vh; background:radial-gradient(circle at center,#1e1438 0%,#0a0615 70%); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:60px 20px 80px; }
+    .logo-wrapper { max-width:420px; margin:0 auto 50px; padding:20px; background:rgba(20,10,40,0.4); border-radius:16px; border:4px solid #3a2a5c; box-shadow:0 0 40px rgba(100,180,255,0.4); }
+    .logo { width:100%; height:auto; display:block; image-rendering:pixelated; border-radius:8px; }
+    .hero-title { font-size:clamp(2.8rem,9vw,9rem); color:#ffdd44; text-shadow:0 0 20px #ffaa00,0 0 50px #ff5500,10px 10px 0 #000,-10px -10px 0 #000,10px -10px 0 #000,-10px 10px 0 #000; letter-spacing:6px; line-height:1; margin:0.3em 0 0.2em; }
+    .subtitle { font-size:clamp(1.6rem,4.5vw,3.8rem); color:#88ccff; text-shadow:5px 5px 0 #000,-5px -5px 0 #000; margin:0.3em 0 1.2em; }
+    .tagline { font-size:1.7rem; max-width:960px; margin:0 auto 3rem; color:#d4c9a8; text-shadow:3px 3px 0 #000; }
+    .cta-button { display:inline-block; padding:20px 55px; font-size:1.9rem; background:linear-gradient(#c41e3b,#8b0000); color:white; text-decoration:none; border:6px solid #ffdd44; box-shadow:0 0 0 10px #000,0 12px 0 #000; transition:all 0.2s; margin:15px; }
+    .cta-button:hover { transform:translateY(-8px); box-shadow:0 0 0 10px #000,0 20px 0 #000; background:linear-gradient(#e63946,#a00000); }
+    .author-btn { background:linear-gradient(#4a6fa5,#2c4a7a); border-color:#a0c0ff; }
+    .author-btn:hover { background:linear-gradient(#5a8fd0,#3c6aa0); }
+    section { padding:120px 20px; max-width:1200px; margin:0 auto; }
+    h2 { font-size:clamp(2.8rem,7vw,6.5rem); color:#ffdd44; text-align:center; margin-bottom:1.5em; text-shadow:6px 6px 0 #000; }
+    .intro-text { font-size:1.6rem; max-width:900px; margin:0 auto 60px; text-align:center; }
+    .content-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(360px,1fr)); gap:50px; margin:60px 0; }
+    .card { background:rgba(25,15,50,0.8); border:5px solid #5c3f2a; padding:35px; box-shadow:0 0 0 8px #000; transition:all 0.25s; border-radius:12px; }
+    .card:hover { transform:translateY(-10px) scale(1.03); }
+    .card h3 { color:#a0d0ff; font-size:2.2rem; margin-bottom:1em; }
+    .features-list { list-style:none; font-size:1.4rem; line-height:2; }
+    .features-list li:before { content:"→ "; color:#ffdd44; margin-right:10px; }
+    .demo-grid { grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:40px; }
+    .demo-card { background:rgba(40,25,60,0.9); border:4px solid #88ccff; }
+    footer { text-align:center; padding:70px 20px; background:#0a0618; border-top:8px solid #5c3f2a; font-size:1.3rem; color:#776644; }
+    @media (max-width:768px) { .logo-wrapper { max-width:320px; margin-bottom:40px; } .hero-title { font-size:clamp(2.2rem,8vw,5rem); letter-spacing:4px; } .subtitle { font-size:clamp(1.4rem,4vw,2.8rem); } .cta-button { padding:16px 40px; font-size:1.6rem; } section { padding:80px 15px; } }
+    @media (max-width:480px) { header { padding:40px 15px 60px; } .logo-wrapper { max-width:280px; padding:15px; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-wrapper">
+    <img src="image.jpg" alt="Legacy of Mankind — Последний из Пяти" class="logo">
+  </div>
+
+  <h1 class="hero-title pixel-font">ПОСЛЕДНИЙ ИЗ ПЯТИ</h1>
+  <div class="subtitle">LAST OF THE HUMANITY</div>
+  <p class="tagline">
+    10 000 лет борьбы. Четверо пали.<br>
+    Последний хранитель человечества выходит из тени.
+  </p>
+
+  <div>
+    <a href="story.html" class="cta-button pixel-font">Узнать историю</a>
+    <a href="author.html" class="cta-button pixel-font author-btn">Информация про автора</a>
+  </div>
+</header>
+
+<section>
+  <h2 class="pixel-font">ОБ ИГРЕ</h2>
+  <p class="intro-text">
+    2D пиксель-арт экшен с видом сверху в духе Soul Knight. Динамичные бои, ИИ-враги и союзники, нелинейный сюжет через флэшбеки — от неолита до степей Казахстана и современности.
+  </p>
+
+  <div class="content-grid">
+    <div class="card">
+      <h3>Сюжет</h3>
+      <p>Последний из пятерых героев неолита защищает человечество 10 000 лет. Четверо пали. Учёные открывают портал демонам — пора выйти из тени.</p>
+    </div>
+
+    <div class="card">
+      <h3>Геймплей</h3>
+      <ul class="features-list">
+        <li>Ближний/дальний бой, копирование умений врагов</li>
+        <li>ИИ-враги (6–8 типов) и союзники</li>
+        <li>3–4 босса с фазами</li>
+        <li>Флэшбеки как сюжетные уровни</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Атмосфера</h3>
+      <ul class="features-list">
+        <li>Степи Казахстана, сакские мотивы, неолит</li>
+        <li>Кат-сцены, текст вместо озвучки</li>
+        <li>Тема одиночества и наследия</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="background:rgba(20,10,40,0.3);">
+  <h2 class="pixel-font">РАЗРАБОТКА</h2>
+  <div class="content-grid">
+    <div class="card">
+      <h3>Движок и инструменты</h3>
+      <ul class="features-list">
+        <li>Unity (C#)</li>
+        <li>Пиксель-арт: Aseprite / Photoshop</li>
+        <li>Звук: freesound.org, opengameart.org</li>
+        <li>Платформа: Windows (потом Steam)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Объём проекта</h3>
+      <ul class="features-list">
+        <li>Полная игра: 4–5 часов</li>
+        <li>Локации: 4–5 зон (степь, руины, города, современность)</li>
+        <li>Диплом: демо 1–2 часа с геймплеем и сюжетом</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="pixel-font">ДЕМО-ВЕРСИЯ (~1 час)</h2>
+  <p class="intro-text">Вступительная часть для диплома: 5 заданий с боями, флэшбеками и сюжетом.</p>
+  <div class="content-grid demo-grid">
+    <div class="card demo-card">
+      <h3>1. Тень в городе</h3>
+      <p>Обычная жизнь. Ночной демон-разведчик в переулке.</p>
+    </div>
+    <div class="card demo-card">
+      <h3>2. Неолит: Первая битва</h3>
+      <p>Флэшбек. Создание Пятерых, обучение у костра.</p>
+    </div>
+    <div class="card demo-card">
+      <h3>3. Лаборатория</h3>
+      <p>Пробраться в комплекс, бой с демонами и охранниками.</p>
+    </div>
+    <div class="card demo-card">
+      <h3>4. Степь саков</h3>
+      <p>Флэшбек. Помощь кочевникам, лук и копьё.</p>
+    </div>
+    <div class="card demo-card">
+      <h3>5. Первый босс</h3>
+      <p>Мини-портал, страж-разлом. Новая способность.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Дипломный проект • Aryslan Hatake (@AryslanHatake) • 2026</p>
+  <p style="margin-top:1em; font-size:1.2rem;">Unity • Pixel Art • Наследие Казахстана</p>
+</footer>
+
+</body>
+</html>
